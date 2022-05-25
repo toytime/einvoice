@@ -77,7 +77,7 @@ public class InvoiceController {
             } catch (IOException e) {
             }
         } else if (null != url) {
-            if (url.toLowerCase().endsWith(".ofd")) {
+            if (url.toLowerCase().contains(".ofd")) {
                 ofd = true;
                 dest = new File(backupPath, fileName + ".ofd");
             } else {
